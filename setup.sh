@@ -4,6 +4,9 @@ sudo apt-get update
 
 sudo apt-get upgrade -y
 
+#install some great software
+sudo apt-get install -y aptitude synaptic bleachbit screen htop
+
 #fix chromium browser
 source fix_chromium.sh
 
