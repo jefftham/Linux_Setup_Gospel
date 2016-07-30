@@ -20,3 +20,13 @@ node -v
 
 #show npm version
 npm -v
+
+#set the current version to $node_version
+node_version=$(echo $(node -v) )
+
+#set $NODE_PATH for npm global modules for this session
+export NODE_PATH=~/.nvm/versions/node/$node_version/lib/node_modules
+
+#set $NODE_PATH every time the session start
+echo "export NODE_PATH=~/.nvm/versions/node/$node_version/lib/node_modules" >>~/.profile
+
