@@ -1,8 +1,8 @@
 #install Node.js with Node Version Manager
 
-sudo apt-get install -y build-essential checkinstall curl
+apt-get install -y build-essential checkinstall curl
 	
-sudo apt-get install -y libssl-dev
+apt-get install -y libssl-dev
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
 
