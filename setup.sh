@@ -15,3 +15,7 @@ source node_setup.sh
 
 #add swap
 source add_swap.sh
+
+#install okular as pdf viewer
+#okular is included in kde
+apt-get install -y okular
