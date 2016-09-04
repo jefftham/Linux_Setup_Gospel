@@ -19,3 +19,10 @@ source add_swap.sh
 #install okular as pdf viewer
 #okular is included in kde
 apt-get install -y okular
+
+#as suggested, it is good to use non-root user in linux
+#however, it require password everytime we use the "sudo" command
+#the following line bypass the password requirement in command-line
+echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | env EDITOR="tee -a" visudo
+
+
