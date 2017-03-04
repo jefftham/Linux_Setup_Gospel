@@ -25,4 +25,12 @@ apt-get install -y okular
 #the following line bypass the password requirement in command-line
 echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | env EDITOR="tee -a" visudo
 
+#install synergy to share keyboard and mouse to other computer in the network
+#source synergy.sh
+
+#auto login into linux without showing the login screen
+source autologin.sh
+
+
+
 

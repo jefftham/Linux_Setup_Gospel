@@ -1,0 +1,15 @@
+#run synergy
+    nohup synergy &
+
+    #wait for 3 seconds
+    sleep 3
+
+    #set the nice value
+    PID=$(ps -C synergys -o pid --no-headers)
+    sudo renice -11 $PID
+
+    #echo the nice level of synergy
+    ps -C synergys -o pid,comm,nice
+
+    
+#other job
