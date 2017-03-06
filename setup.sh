@@ -5,7 +5,7 @@ apt-get update
 apt-get upgrade -y
 
 #install some great software
-apt-get install -y aptitude synaptic bleachbit screen htop
+apt-get install -y aptitude synaptic bleachbit screen htop git
 
 #fix chromium browser
 source fix_chromium.sh
@@ -31,6 +31,7 @@ echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | env EDITOR="tee -a" visudo
 #auto login into linux without showing the login screen
 source autologin.sh
 
-
+#install private cloud - seafile
+#source seafile.sh
 
 
